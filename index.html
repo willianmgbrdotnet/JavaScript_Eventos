@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <style>
+        body {
+            /*centraliza todo o conteúdo do body*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprendendo JavaScript _ Eventos</h1>
+    <!-- O conteúdo do "texto" será definido no "index.js"-->
+    <p id="texto"></p>
+    <button onclick="eventoClick()">Estou aprendendo, clique aqui por favor</button><br><br>
+
+    <button ondblclick="clickDuplo()">Click aqui duas vezes bem rápido</button><br><br>
+    <!--Inicialmente a div (conteiner ou bloco da pagina) estará na cor laranja-->
+    <!--O nome desta div será "bloco"-->
+    <div id="bloco" onmouseup="soltaBranco()" onmousedown="apertaVermelho()" onmousemove="moveuMouse()" onmouseout="viraVerde()" onmouseover="viraAzul()" 
+    style="margin: auto; width: 80%; height: 200px; background: orange;"></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
