@@ -17,5 +17,8 @@
 
 *onfocus<br />
 *onblur<br />
-*onchange<br />
-*continua
+*onchange<br /> 
+
+Inseridos na tag body
+*onload<br /> 
+*onresize

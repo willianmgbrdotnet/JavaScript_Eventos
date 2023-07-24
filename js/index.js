@@ -41,7 +41,7 @@ function restauraPagina(){
     document.body.style.backgroundColor = "orange";
 
 }
-//onchang
+//onchange
 //DropDown com 4 opções de cores
 function mudaCor(){
     let elementoSelect = document.getElementById("cores");
