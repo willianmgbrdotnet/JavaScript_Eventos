@@ -10,11 +10,23 @@
             /*centraliza todo o conteúdo do body*/
             text-align: center;
         }
+        /*Medidas do botão dropDown de seleção de cores*/
+        #cores{
+            width: 100px; height: 50px; text-align: center; font-size: 30px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Aprendendo JavaScript _ Eventos</h1>
+
+    <select onchange="mudaCor()" id="cores">
+        <option value="1">Cor 1</option>
+        <option value="2">Cor 2</option>
+        <option value="3">Cor 3</option>
+        <option value="4">Cor 4</option>
+    </select>
+
     <!-- O conteúdo do "texto" será definido no "index.js"-->
     <p id="texto"></p>
     <button onclick="eventoClick()">Estou aprendendo, clique aqui por favor</button><br><br>
@@ -22,8 +34,12 @@
     <button ondblclick="clickDuplo()">Click aqui duas vezes bem rápido</button><br><br>
     <!--Inicialmente a div (conteiner ou bloco da pagina) estará na cor laranja-->
     <!--O nome desta div será "bloco"-->
-    <div id="bloco" onmouseup="soltaBranco()" onmousedown="apertaVermelho()" onmousemove="moveuMouse()" onmouseout="viraVerde()" onmouseover="viraAzul()" 
+    <div id="bloco" onmouseup="soltaBranco()" onmousedown="apertaVermelho()" 
+    onmousemove="moveuMouse()" onmouseout="viraVerde()" onmouseover="viraAzul()" 
     style="margin: auto; width: 80%; height: 200px; background: orange;"></div>
+    <p id="texto2"></p>
+                                                    <!--Cria uma caixa de texto-->
+    <input onblur="foraCaixaTexto()" onfocus="restauraPagina()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text" placeholder="padding é campo para texto." >
 
     <script src="js/index.js"></script>
 </body>

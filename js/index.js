@@ -32,3 +32,42 @@ function apertaVermelho(){
 function soltaBranco(){
     document.body.style.backgroundColor = "white"
 }
+//onfocus
+function restauraPagina(){
+    //limpa a caixa de texto para poder digitar
+    document.getElementById("campoTexto").value=" ";
+    document.getElementById("texto").innerHTML=" ";
+    document.getElementById("texto2").innerHTML=" DIGITE O QUE VOCÊ QUISER ";
+    document.body.style.backgroundColor = "orange";
+
+}
+//onchang
+//DropDown com 4 opções de cores
+function mudaCor(){
+    let elementoSelect = document.getElementById("cores");
+    let corSelecionada = elementoSelect.value;
+
+    switch(corSelecionada){
+        case "1":
+            document.body.style.backgroundColor = "green";
+        break;
+        case "2":
+        document.body.style.backgroundColor = "purple";
+        break;
+        case "3":
+        document.body.style.backgroundColor = "blue";
+        break;
+        case "4":
+        document.body.style.backgroundColor = "red";
+        break;
+        default:
+        document.body.style.backgroundColor = "white";
+        break;
+        }
+}
+
+//onblur
+function foraCaixaTexto(){
+    document.getElementById("texto2").innerHTML=" VOCÊ CLICOU FORA DA CAIXA DE TEXTO ";
+    document.body.style.backgroundColor = "aquamarine";
+}
